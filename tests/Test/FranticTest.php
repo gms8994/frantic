@@ -2,16 +2,16 @@
 
 namespace Test\Frantic;
 
-require_once __DIR__ . '/../../vendor/autoload.php';
+$result = require_once __DIR__ . '/../../vendor/autoload.php';
 
-use Frantic\Frantic;
+use \Frantic;
 
-echo 'Frantic ' . \Frantic::VERSION . ' tested with ';
+# echo 'Frantic ' . \Frantic::VERSION . ' tested with ';
 
 class FranticTest extends \PHPUnit_Framework_TestCase {
 
 	public function testNewInstance() {
-		$form = new Frantic();
+		$form = new \Frantic\Frantic();
 		$this->assertTrue(is_a($form, 'Frantic\\Frantic'), 'Form must be an object');
 	}
 

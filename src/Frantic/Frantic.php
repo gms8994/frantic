@@ -4,6 +4,8 @@ namespace Frantic;
 
 class Frantic {
 
+	const VERSION = '0.0.1';
+
 	private $name = null;
 	private $fields = array();
 

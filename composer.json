@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Frantic is a framework agnostic method of generating and validating forms",
     "keywords": [ "form" ],
-    "homepage": "https://bitbucket.org/gms8994/frantic-form",
+    "homepage": "https://github.com/gms8994/frantic-form",
     "license": "MIT",
     "authors": [
         {

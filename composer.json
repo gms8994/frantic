@@ -1,0 +1,24 @@
+{
+    "name": "gms8994/frantic",
+    "type": "library",
+    "description": "Frantic is a framework agnostic method of generating and validating forms",
+    "keywords": [ "form" ],
+    "homepage": "https://bitbucket.org/gms8994/frantic-form",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Glendon Solsberry",
+            "homepage": "http://www.dp.cx/blog/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Frantic\\Frantic": "src/",
+            "Test\\Frantic\\Frantic": "test/"
+        }
+    }
+}

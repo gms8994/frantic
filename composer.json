@@ -15,9 +15,12 @@
     "require": {
         "php": ">=5.2.0"
     },
+	"require-dev": {
+		"phpunit/phpunit": "*"
+	},
     "autoload": {
         "psr-0": {
-            "Frantic\\Frantic": "src/",
+            "Frantic": "src/",
             "Test\\Frantic\\Frantic": "test/"
         }
     }

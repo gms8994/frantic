@@ -25,7 +25,7 @@ class Frantic {
 		if (is_null($callback)) {
 			$string = '';
 			foreach ($fields as $field) {
-				$string .= '';
+				$string .= $field->render();
 			}
 		} else {
 			$string = $callback($fields);

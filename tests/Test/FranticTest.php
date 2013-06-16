@@ -6,8 +6,6 @@ $result = require_once __DIR__ . '/../../vendor/autoload.php';
 
 use \Frantic;
 
-# echo 'Frantic ' . \Frantic::VERSION . ' tested with ';
-
 class FranticTest extends \PHPUnit_Framework_TestCase {
 
 	public function testNewInstance() {

@@ -9,8 +9,24 @@ use \Frantic;
 class FranticTest extends \PHPUnit_Framework_TestCase {
 
 	public function testNewInstance() {
-		$form = new \Frantic\Frantic();
-		$this->assertTrue(is_a($form, 'Frantic\\Frantic'), 'Form must be an object');
+		$form = new \Frantic\Form();
+		$this->assertTrue(is_a($form, 'Frantic\\Form'), 'Form must be an object');
+	}
+
+	public function testAddBaseField() {
+		$form = new \Frantic\Form();
+		$form->add("firstname");
+
+		$output = $form->render();
+		$this->assertEquals('<input type="text" name="firstname" />', $output, 'Rendered form should match');
+	}
+
+	public function testAddFieldWithLabel() {
+		$form = new \Frantic\Form();
+		$form->add("firstname", "text", "First Name");
+
+		$output = $form->render();
+		$this->assertEquals('<label for="">First Name</label><input type="text" name="firstname" />', $output, 'Rendered form should match');
 	}
 
 }
